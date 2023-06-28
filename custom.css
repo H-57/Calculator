@@ -1,0 +1,132 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    user-select: none;
+    list-style-type: none;
+}
+
+body{
+    background-color: #1f2326;
+    color: aliceblue;
+}
+h1{
+    text-align: center;
+    margin: 1rem;
+}
+.container{
+    background: linear-gradient(to bottom left,#404747,#262a2d);
+    width:256px;
+    height: 500px;
+    /* border:white solid 3px; */
+    margin:auto;
+    border-radius:24px
+}
+.flex{
+    display: flex;
+  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: fit-content;
+}
+button{
+    
+    cursor: pointer;
+   color: white;
+   width: 2rem;
+   height: 2rem;
+   border-radius: 25px;
+   border: none;
+   box-shadow: #1f2326;
+   margin:5px;
+   box-shadow: aliceblue 0px 6px 6px;
+    font-weight: bolder;
+}
+input{
+    margin: auto;
+    overflow-x: scroll;
+    width: 90%;
+    /* max-width: 30vw; */
+    color: aliceblue;
+    font-weight: 600;
+    font-size: larger;
+    border:none;
+    outline: none;
+    height: 40px;
+    background-color:transparent;
+}
+.y-btn{
+    background-color: rgba(255, 190, 70, 0.863);
+    box-shadow: aliceblue 0px 6px 6px;
+}
+.p-btn{
+    background-color: rgb(135, 70, 255);
+}
+.g-btn{
+    background-color: #7c8184;
+}
+.eq{
+    width: 5rem;
+}
+#status{
+    margin-left:20px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100%;
+overflow: hidden;
+    /* background-color: aliceblue; */
+}
+#history{
+    height: 150px;
+    width: 100%;
+    background: #232626a8;
+   
+    overflow-y:scroll;
+    scrollbar-width: none;
+
+   
+}
+#history ul{
+    margin-right: 5px;
+    float: right;
+}
+button:active{
+    transform: translatey(2px);
+}
+.btn-pads{
+    margin-left:1rem;
+   
+    
+}
+#neticon{
+    width: fit-content;
+float: inline-end;
+margin-right: 20px;
+margin-top: 5px;
+}
+@media (max-width: 480px){
+    .container{
+        width: 90vw;
+        height: 580px;
+        overflow: hidden;
+    }
+    .btn-pads{
+        width:90;
+    }
+    #history{
+        width: 90vw;
+    }
+    button{
+        width: 3.5rem;
+   height: 3.5rem;
+    }
+    .eq{
+        width:7rem
+    }
+    #status{
+        margin-bottom: 0px;
+    }
+    input{
+        font-size: xx-large;
+    }
+}
