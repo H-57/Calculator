@@ -100,12 +100,10 @@ button:active{
 }
 #neticon{
     width: fit-content;
-
+float: inline-end;
 margin-right: 20px;
 margin-top: 5px;
-display: inline-block;
-    position: relative;
-    right: -217px;
+
 }
 @media (max-width: 480px){
     .container{
@@ -131,5 +129,10 @@ display: inline-block;
     }
     input{
         font-size: xx-large;
+    }
+    #neticon{
+        display: inline-block;
+    position: relative;
+    right: -217px;
     }
 }
