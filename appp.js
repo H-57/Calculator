@@ -53,7 +53,8 @@ if(allEntries.length>=1)
 //for stus bar time and more icons
 const timeElem=document.getElementById('time')
 const time=new Date()
-timeElem.innerText=`${time.getHours()-12}:${time.getMinutes()}`
+const hour=(time.getHours()<=12)?time.getHours():time.getHours()-12
+timeElem.innerText=`${hour}:${time.getMinutes()}`
 
 
 // delet local storage

@@ -4,19 +4,22 @@
     user-select: none;
     list-style-type: none;
 }
-
+html{
+    font-size: 66.5%;
+}
 body{
     background-color: #1f2326;
     color: aliceblue;
 }
 h1{
     text-align: center;
-    margin: 1rem;
+    font-size: 3rem;
+    margin: 1.6rem;
 }
 .container{
     background: linear-gradient(to bottom left,#404747,#262a2d);
-    width:256px;
-    height: 500px;
+    width:fit-content;
+    height: auto;
     /* border:white solid 3px; */
     margin:auto;
     border-radius:24px
@@ -32,32 +35,33 @@ h1{
 button{
     
     cursor: pointer;
+    font-size: 2.5rem;
    color: white;
-   width: 2rem;
-   height: 2rem;
+   width: 5rem;
+   height: 4rem;
    border-radius: 25px;
    border: none;
    box-shadow: #1f2326;
-   margin:5px;
-   box-shadow: aliceblue 0px 6px 6px;
+   margin:0.5rem;
+   box-shadow: aliceblue 0rem 0.6rem 0.6rem ;
     font-weight: bolder;
 }
 input{
     margin: auto;
     overflow-x: scroll;
-    width: 90%;
-    /* max-width: 30vw; */
+    width:90%;
+
     color: aliceblue;
     font-weight: 600;
-    font-size: larger;
+    font-size: 2rem;
     border:none;
     outline: none;
-    height: 40px;
+    height: 4rem;
     background-color:transparent;
 }
 .y-btn{
     background-color: rgba(255, 190, 70, 0.863);
-    box-shadow: aliceblue 0px 6px 6px;
+    box-shadow: aliceblue 0rem 0.6rem 0.6rem ;
 }
 .p-btn{
     background-color: rgb(135, 70, 255);
@@ -66,18 +70,19 @@ input{
     background-color: #7c8184;
 }
 .eq{
-    width: 5rem;
+    width: 11rem;
 }
 #status{
-    margin-left:20px;
-    margin-bottom: 20px;
-    height: 30px;
+    margin-left:2rem;
+    margin-bottom: 2rem;
+    height: 3rem;
     width: 100%;
+    
 overflow: hidden;
     /* background-color: aliceblue; */
 }
 #history{
-    height: 150px;
+    height: 15rem;
     width: 100%;
     background: #232626a8;
    
@@ -87,11 +92,13 @@ overflow: hidden;
    
 }
 #history ul{
-    margin-right: 5px;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 200;
     float: right;
 }
 button:active{
-    transform: translatey(2px);
+    transform: translatey(0.2rem);
 }
 .btn-pads{
     margin-left:1rem;
@@ -100,39 +107,27 @@ button:active{
 }
 #neticon{
     width: fit-content;
-float: inline-end;
-margin-right: 20px;
-margin-top: 5px;
+    display: block;
+    float: right;
+margin-right: 2rem;
+margin-top: 0.5rem;
+font-size: 2rem;
 
 }
-@media (max-width: 480px){
-    .container{
-        width: 90vw;
-        height: 580px;
-        overflow: hidden;
-    }
-    .btn-pads{
-        width:90;
-    }
-    #history{
-        width: 90vw;
-    }
-    button{
-        width: 3.5rem;
-   height: 3.5rem;
-    }
-    .eq{
-        width:7rem
-    }
-    #status{
-        margin-bottom: 0px;
-    }
-    input{
-        font-size: xx-large;
-    }
-    #neticon{
-        display: inline-block;
-    position: relative;
-    right: -217px;
-    }
-}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#history::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #history {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+ @media (max-width: 300px){
+   html{
+    font-size: 55%;
+   }
+} 
