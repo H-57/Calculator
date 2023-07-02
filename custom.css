@@ -72,6 +72,7 @@ input{
 .eq{
     width: 11rem;
 }
+li{text-align: end;}
 #status{
     margin-left:2rem;
     margin-bottom: 2rem;
@@ -96,6 +97,8 @@ overflow: hidden;
     font-size: 1.5rem;
     font-weight: 200;
     float: right;
+    display: flex;
+    flex-direction: column;
 }
 button:active{
     transform: translatey(0.2rem);
